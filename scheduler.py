@@ -2,10 +2,10 @@ import re
 
 is_24_hour_format = False
 start_time = '7:00 AM'
-end_time = '10:00 AM'	# 9:00 PM
-activity_length = 60	# 180
+end_time = '9:00 PM'
+activity_length = 180
 block_length = 5
-num_choices = 10
+num_choices = 5
 
 def to_num_12(tme):
 	hh, mm, mer = re.split('\W', tme)
@@ -102,9 +102,9 @@ def find_available():
 		f.write(f'Members available: {num_members-num_unavail}/{num_members}\n')
 		f.write(f'Members unavailable:\n')
 		for i in range(len(unavails)):
-			if i % 3 == 0:
+			if i % 10 == 0:
 				f.write('\n')
-			f.write('{:<20}'.format(members[unavails[i]]))
+			f.write('{:<25}'.format(members[unavails[i]]))
 		f.write('\n\n')
 
 	f.close()
