@@ -1,5 +1,4 @@
 import re
-import os
 
 is_24_hour_format = False
 start_time = '7:00 AM'
