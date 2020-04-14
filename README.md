@@ -1,4 +1,4 @@
-# club-schedulerrr
+# club-schedulerrrererer
 A python script that outputs the best timeslots for a club activity to minimize conflict with club members' schedules
 
 ### parameters
